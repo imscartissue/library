@@ -1,0 +1,139 @@
+@font-face {
+    font-family: sora;
+    src: url("./fonts/Sora-Regular.woff2");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sora, sans-serif;
+    background-color: #3c3836;
+    width: 100%;
+}
+
+.blueprint {
+    background-color: #458588;
+    border-radius: 20px;
+    position: fixed;
+    top: 50%;
+    left: 3svw;
+    padding: 1rem;
+    width: 23rem;
+    box-shadow: 1px 1px 5px #1a1919;
+}
+
+.blueprint form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0.5rem;
+}
+
+.blueprint form input {
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+    font-family: sora, sans-serif;
+    color: #3c3836;
+}
+
+#clear-button {
+    background-color: #cc241d;
+    font-family: sora, sans-serif;
+    font-size: 1.2rem;
+    padding: 0.5em;
+    position: fixed;
+    top: 35%;
+    left: 13svw;
+    margin-top: 1em;
+    border: none;
+    border-radius: 20px;
+    color: #3c3c3c;
+    transition: 0.1s;
+}
+
+#clear-button:hover {
+    cursor: pointer;
+    background-color: #ad0c06;
+    font-size: 1.3rem;
+}
+
+h1 {
+    color: 	#8ec07c;
+    text-align: center;
+    margin: 2rem;
+}
+
+h2 {
+    color: #458588;
+    text-align: center;
+    margin: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-auto-rows: repeat(autofit, minmax(100px, 1fr));
+}
+
+.button-container {
+    text-align: center;
+}
+
+#add-button {
+    background-color: #8ec07c;
+    font-family: sora, sans-serif;
+    font-size: 1.2rem;
+    padding: 0.5em;
+    margin-top: 1em;
+    border: none;
+    border-radius: 20px;
+    color: #3c3c3c;
+    transition: 0.1s;
+}
+
+#add-button:hover {
+    cursor: pointer;
+    background-color: #69bd4a;
+    font-size: 1.3rem;
+}
+
+.grid-container {
+    margin-left: 27rem;
+    margin-bottom: 2rem;
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    background-color: #d79921;
+    border-radius: 20px;
+    padding: 1rem;
+    width: 18rem;
+    box-shadow: 1px 1px 2px #1a1919;
+}
+
+#delete-button {
+    background-color: #cc241d;
+    font-family: sora, sans-serif;
+    font-size: 1.2rem;
+    padding: 0.5em;
+    margin-top: 1em;
+    border: none;
+    border-radius: 20px;
+    color: #3c3c3c;
+    transition: 0.1s;
+}
+
+#delete-button:hover {
+    cursor: pointer;
+    background-color: #ad0c06;
+    font-size: 1.3rem;
+}
